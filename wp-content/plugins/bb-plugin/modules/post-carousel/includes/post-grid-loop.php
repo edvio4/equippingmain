@@ -1,7 +1,7 @@
 <div class="fl-post-carousel-post" itemscope="itemscope" itemtype="<?php FLPostGridModule::schema_itemtype(); ?>">
-	
+
 	<?php FLPostGridModule::schema_meta(); ?>
-	
+
 	<?php if(has_post_thumbnail() && $settings->show_image) : ?>
 	<div class="fl-post-carousel-image">
 		<?php $module->render_img( get_the_id() ) ?>
@@ -21,8 +21,7 @@
 				<?php
 
 				printf(
-					_x( 'By %s', '%s stands for author name.', 'fl-builder' ),
-					'<a href="' . get_author_posts_url( get_the_author_meta( 'ID' ) ) . '"><span>' . get_the_author_meta( 'display_name', get_the_author_meta( 'ID' ) ) . '</span></a>'
+					_x( 'by %s', '%s stands for author name.', 'fl-builder' ), '<span>' . get_the_author_meta( 'display_name', get_the_author_meta( 'ID' ) ) . '</span>'
 				);
 
 				?>
