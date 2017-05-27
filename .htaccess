@@ -43,8 +43,3 @@ ExpiresByType image/x-icon "access 1 year"
 </IfModule>
 ## EXPIRES CACHING ##
 AddHandler application/x-httpd-php56 .php .php5 .php4 .php3 .php2
-
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteRule ^sitemap(-+([a-zA-Z0-9_-]+))?\.xml(\.gz)?$ /blog/sitemap$1.xml$2 [L]
-</IfModule>
